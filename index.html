@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="dist/main.js"></script>
+        <style>
+            #formula {
+                width: 500px;
+            }
+            #artifactTextBox {
+                width: 500px;
+                height: 1200px;
+            }
+            #formula_div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+            }
+            #er_div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+            }
+            #runs_div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My First TypeScript Web Page</h1>
+        <div id="formula_div">
+            <label for="formula">Damage Formula:</label>
+            <input type="text" id="formula" name="formula">
+        </div>
+        <div id="er_div">
+            <label for="ER">ER Requirement:</label>
+            <input type="text" id="er" name="er">
+        </div>
+        <div id="runs_div">
+            <label for="runs">Max Domain Runs:</label>
+            <input type="text" id="runs" name="runs">
+        </div>
+        <div>
+            <button id="runSimulation">Run Simulation</button>
+        </div>
+        <p>Artifact Generation</p>
+        <textarea id="artifactTextBox" readonly></textarea>
+    </body>
+</html>
